@@ -1,0 +1,46 @@
+{
+  "name": "@kanad-shee/next-js-project-setup",
+  "version": "1.0.0",
+  "description": "Interactive CLI tool to quickly setup Next.js projects with TypeScript, Tailwind CSS, shadcn/ui, and Prettier",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "nextjs-setup": "./index.js",
+    "project-setup": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "nextjs",
+    "next.js",
+    "cli",
+    "setup",
+    "shadcn",
+    "shadcn-ui",
+    "project-generator",
+    "typescript",
+    "tailwindcss",
+    "prettier",
+    "boilerplate",
+    "scaffold"
+  ],
+  "author": "Kanad Shee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kanad-Shee/next-js-project-setup"
+  },
+  "homepage": "https://github.com/Kanad-Shee/next-js-project-setup#readme",
+  "bugs": {
+    "url": "https://github.com/Kanad-Shee/next-js-project-setup/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "chalk-animation": "^2.0.3",
+    "figlet": "^1.10.0",
+    "gradient-string": "^3.0.0",
+    "inquirer": "^13.2.5",
+    "nanospinner": "^1.2.2"
+  }
+}

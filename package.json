@@ -1,15 +1,19 @@
 {
-  "name": "@kanad-shee/next-js-project-setup",
+  "name": "@kanad_shee/next-js-setup-cli",
   "version": "1.0.0",
   "description": "Interactive CLI tool to quickly setup Next.js projects with TypeScript, Tailwind CSS, shadcn/ui, and Prettier",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "bin": {
-    "nextjs-setup": "./index.js",
-    "project-setup": "./index.js"
+    "nextjs-setup": "dist/index.js",
+    "create-nextjs-project": "dist/index.js"
   },
   "scripts": {
-    "start": "node index.js"
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc && node dist/index.js",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "nextjs",
@@ -42,5 +46,21 @@
     "gradient-string": "^3.0.0",
     "inquirer": "^13.2.5",
     "nanospinner": "^1.2.2"
+  },
+  "devDependencies": {
+    "@types/chalk-animation": "^1.6.3",
+    "@types/figlet": "^1.7.0",
+    "@types/gradient-string": "^1.1.6",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^25.3.0",
+    "typescript": "^5.7.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
